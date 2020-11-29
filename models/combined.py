@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from models.highlight_fcsn import FCSN_encoder, FCSN_decoder
 from models.history import HistoryNet
 
-# Ref: https://github.com/nvlabs/FUNIT/
+# Reference: https://github.com/NVlabs/FUNIT/blob/master/networks.py
 def assign_adain_params(adain_params, model):
     # assign the adain_params to the AdaIN layers in model (i.e. FCSN_decoder())
     for m in model.modules():
